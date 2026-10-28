@@ -103,7 +103,7 @@ export default function Page() {
           <a href="#" className="flex min-w-0 items-center gap-2 text-white">
             {logo && (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={logo} alt="" width={32} height={32} className="h-8 w-8 rounded-full bg-white object-cover" />
+              <img src={logo} alt="Tchokos" width={40} height={40} className="h-10 w-10 rounded-full ring-2 ring-or/70" />
             )}
             <span className="titre truncate text-sm font-extrabold tracking-wide">
               TCHOKOS <span className="text-or">×</span> ZAYRA
@@ -129,8 +129,12 @@ export default function Page() {
           <div className="pointer-events-none absolute -bottom-48 -left-32 h-[28rem] w-[28rem] rounded-full bg-or/15 blur-3xl" />
           <div className="relative mx-auto grid max-w-6xl gap-10 px-5 pt-12 pb-14 sm:pt-16 lg:grid-cols-[1.15fr_1fr] lg:items-center lg:pt-20 lg:pb-20">
             <div>
+              {logo && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={logo} alt="Logo Tchokos SARL" width={96} height={96} className="mb-5 h-20 w-20 rounded-full shadow-xl ring-4 ring-or/60 sm:h-24 sm:w-24" />
+              )}
               <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white/80 ring-1 ring-white/15">
-                <span className="h-1.5 w-1.5 rounded-full bg-or" /> Proposition pour Tchokos SARL · Akwa, Douala
+                <span className="h-1.5 w-1.5 rounded-full bg-or" /> Conçu pour Tchokos SARL · Akwa, Douala
               </p>
               <h1 className="mt-5 text-[2.35rem] leading-[1.08] font-extrabold sm:text-6xl">
                 Votre audience est énorme. <span className="degrade-texte">Faisons-la vendre.</span>

@@ -15,7 +15,13 @@ export const metadata: Metadata = {
   title: "Tchokos × Zayra Technologies — Votre audience est énorme. Faisons-la vendre.",
   description: "Maquette de présentation privée : gestion du marketing digital de Tchokos SARL par Zayra Technologies.",
   robots: { index: false, follow: false, nocache: true, googleBot: { index: false, follow: false } },
-  icons: { icon: "/media/logo-tchokos.jpg" },
+  openGraph: {
+    title: "Tchokos × Zayra — Votre audience est énorme. Faisons-la vendre.",
+    description: "Le diagnostic du marketing digital de Tchokos SARL, et notre plan pour le faire vendre.",
+    images: [{ url: "/og-tchokos.png", width: 1200, height: 630 }],
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 export const viewport: Viewport = {

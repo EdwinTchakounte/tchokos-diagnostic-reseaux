@@ -151,9 +151,11 @@ console.log(`Données réduites : ${toutes.length} publications → ${site.publi
 const medias = { publications: {}, montages: {} , logo: null };
 
 // Logo
-const logoSortie = path.join(MEDIA, "logo-tchokos.jpg");
-if (fs.existsSync(LOGO)) {
-  if (affiche(LOGO, logoSortie, 0, 240)) medias.logo = "/media/logo-tchokos.jpg";
+// Logo rond détouré (identite/logo-tchokos-rond.png), copié tel quel dans public/media/logo-tchokos.png
+const LOGO_ROND = path.join(RACINE, "identite", "logo-tchokos-rond.png");
+const logoSortie = path.join(MEDIA, "logo-tchokos.png");
+if (fs.existsSync(logoSortie) || (fs.existsSync(LOGO_ROND) && affiche(LOGO_ROND, logoSortie, 0, 240))) {
+  medias.logo = "/media/logo-tchokos.png";
 }
 
 // ------------------------------------------------------------------ publications
